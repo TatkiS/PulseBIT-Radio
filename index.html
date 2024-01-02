@@ -9,21 +9,22 @@
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(252, 252, 252); /* Виправлено на світло-синій фон */
+    background-color: #000; /* Темний фон для кращої видимості білого тексту */
+    color: white; /* Білий текст */
   }
   header {
-    background-color: rgb(39, 252, 20);
-    color: hsl(120, 96%, 51%);
-    padding: 10px 0;
+    background-color: #0057b8; /* Темно-синій для верхньої шапки */
+    color: #fff;
+    padding: 30px 0; /* Збільшено верхню шапку */
     text-align: center;
   }
   header h1 {
     animation: colorChange 10s infinite;
   }
   @keyframes colorChange {
-    0% { color: #8A2BE2; }
+    0% { color: #ff2d55; }
     50% { color: #ffffff; }
-    100% { color: #1E90FF; }
+    100% { color: #4cd964; }
   }
   nav ul {
     padding: 0;
@@ -35,16 +36,16 @@
   }
   nav ul li a {
     text-decoration: none;
-    color: hsl(192, 85%, 36%);
+    color: #fff;
   }
   main {
     padding: 15px;
   }
   footer {
-    background-color: rgb(60, 252, 86);
-    color: hwb(0 100% 0%);
+    background-color: #002f6c; /* Темно-синій для нижньої шапки */
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 30px 0; /* Збільшено нижню шапку */
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -52,17 +53,15 @@
   audio {
     max-width: 300px; /* Фіксована максимальна ширина */
     width: 100%; /* Адаптивність */
-    margin: auto; /* Центрування аудіо плеєра */
+    display: block; /* Центрування аудіо плеєра */
+    margin: 20px auto; /* Додано відступи зверху та знизу */
   }
   /* Адаптація під мобільні пристрої */
   @media screen and (max-width: 768px) {
     nav ul li {
       display: block;
-      margin: 0;
+      margin: 10px 0; /* Додано відступи для мобільних пристроїв */
       text-align: center;
-    }
-    audio {
-      max-width: none; /* Видалення обмеження максимальної ширини для мобільних */
     }
   }
 </style>
@@ -72,7 +71,9 @@
 <h1>PulseBIT Radio</h1>
 <nav>
 <ul>
-
+  <li><a href="#about">Про нас</a></li>
+  <li><a href="#schedule">Розклад</a></li>
+  <li><a href="#contact">Контакти</a></li>
 </ul>
 </nav>
 </header>
