@@ -50,10 +50,12 @@
     bottom: 0;
     width: 100%;
   }
-  audio {
+  .player-container {
+    text-align: center; /* Центрування плеєра */
+  }
+  iframe {
     max-width: 300px; /* Фіксована максимальна ширина */
     width: 100%; /* Адаптивність */
-    display: block; /* Центрування аудіо плеєра */
     margin: 20px auto; /* Додано відступи зверху та знизу */
   }
   /* Адаптація під мобільні пристрої */
@@ -62,6 +64,9 @@
       display: block;
       margin: 10px 0; /* Додано відступи для мобільних пристроїв */
       text-align: center;
+    }
+    .player-container iframe {
+      max-width: 100%; /* Адаптивна ширина для мобільних пристроїв */
     }
   }
 </style>
@@ -89,17 +94,16 @@
 
 <section id="player">
 <h2>Прямий ефір</h2>
-<audio controls>
-<source src="https://zeno.fm/radio/pulsebit-radio" type="audio/mpeg">
-Ваш браузер не підтримує аудіо елемент.
-</audio>
+<div class="player-container">
+  <iframe src="https://zeno.fm/player/pulsebit-radio" width="575" height="250" frameborder="0" scrolling="no"></iframe>
+</div>
 </section>
-    <a href="https://tatkis.github.io/CryptoHub/" target="_blank">
+    <a href="https://linktr.ee/Sergiy_Budniy" target="_blank">
       <button class="buymeacoffee">НА КАВУ</button>
     </a>
 <section id="contact">
 <h2>Контакти</h2>
-<p>Для зв'язку з нами використовуйте електронну пошту: <a href="mailto:sibabs1981@proton.me">sibabs1981@proton.me</a></p>
+<p>Для зв'язку з нами використовуйте електронну пошту: <a href="mailto:wavevictory@protonmail.com">wavevictory@protonmail.com</a></p>
 </section>
 </main>
 
